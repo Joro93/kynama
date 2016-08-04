@@ -301,6 +301,7 @@ header .row {
 .logo {
   height: 40px;
   padding: 20px 0;
+    max-width:150px;
 }
 .logo a {
   display: inline-block;
@@ -1121,6 +1122,7 @@ header .row {
 .copyright a {
   color: #2bcdc1;
 }
+
 
 
 
