@@ -767,7 +767,7 @@ header .row {
   width: 100%;
 }
 .Reviews-area {
-  background: rgba(0, 0, 0, 0) url("img/background/bg3.jpg") no-repeat scroll center top / cover ;
+  background: rgba(0, 0, 0, 0) url("img/background/bg5.jpg") no-repeat scroll center top / cover ;
   background-attachment: fixed;
 }
 .Reviews-content {
@@ -968,7 +968,7 @@ header .row {
 /* 10.Contact CSS
 /*----------------------------------------*/
 .contact-area {
-  background: url(img/background/bg3.jpg);
+  background: url(img/background/bg5.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
