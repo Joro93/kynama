@@ -12,10 +12,9 @@ $to = "contact@kynama.com";
 
 mail($to, $subject, $message, "From: " . $email);
 
-header('Location: index.html');
+setcookie("message_sent", true);
 
 
-$_COOKIE['message_sent'] = true;
-
-
+// dont write code below this
 ?>
+<?php header('Location: index.html'); ?>

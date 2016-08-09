@@ -7,3 +7,13 @@
 .stick .logo {
 	height:auto;
 }
+#msg-box {
+	float: left;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    color: green;
+    background-color:#fff;
+    margin-top:10px;
+}
