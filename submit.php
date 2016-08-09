@@ -5,7 +5,7 @@ session_start();
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
-$message = 'From: '.$name.'\n';
+$message = 'From: '.$name." ";
 $message .= 'Message: '. $_POST['message'];
 
 $to = "contact@kynama.com";
