@@ -159,7 +159,7 @@
 				        <div class="about-details text-center">
 				            <div class="single-about">
 				                <a class="about-icon" href="#"><i class="fa fa-wordpress"></i></a>
-				                <h4>Wordpress Developer</h4>
+				                <h4>iOS developing</h4>
 				                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam accusamus reiciendis asperiores debitis similique assumenda animi non id pariatur.</p>
 				            </div>
 				        </div>
@@ -540,31 +540,32 @@
                             <!-- Map area -->
                             <div class="map-area">
                                 <div id="googleMap" style="width:100%;height:320px;"></div>
+                                
                             </div><!-- End Map area -->
                             <div class="contact-info">
                                 <div class="contact-icons">
                                     <h3>Contact info</h3>
                                     <ul>
                                         <li>
-                                            <i class="fa fa-map-marker"></i> <strong>Address</strong>
-                                             324 ready Street, NewYork AmeRica.
+                                            <i class="fa fa-map-marker"></i> <strong>Address:</strong>
+                                             Varna, Bulgaria
                                         </li>
                                         <li>
                                             <i class="fa fa-mobile"></i> <strong>Phone</strong>
-                                            +880098765433
+                                            +359 896 741 379
+                                            
+                                            
+                                          
                                         </li>
                                         <li>
                                             <i class="fa fa-envelope"></i> <strong>Email</strong>
-                                            <a href="#">admin@usdtheme.com</a>
+                                            <a href="#">contact@kynama.com</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="icons-bottom text-center">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -577,7 +578,7 @@
                                 <h4 class="intro-head">Leave a massege</h4>
                             </div>
                             <div class="row contact-bg">
-                                <form action="mail.php" method="post">
+                                <form action="submit.php" method="post">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <input name="name" type="text" placeholder="Name (required)" />
                                     </div>
@@ -589,8 +590,9 @@
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                        <input type="submit" value="Submit Form" />
+                                        <input type="submit" value="Send " />
                                     </div>
+                                    <div id="msg-box" style="display:none;">Your message has been sent!</div>
                                 </form>
                             </div>
                         </div>
@@ -605,7 +607,7 @@
                    <div class="row">
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="copyright text-center">
-                            <p>Copyright © 2016 <a href="#"> usdtheme</a>. All Rights Reserved</p>
+                            <p>Copyright © 2016 <a href="#"> KYNAMA</a>. All Rights Reserved</p>
                           </div>
                        </div>
                    </div>
@@ -624,23 +626,22 @@
 			  var mapOptions = {
 				zoom: 15,
 				scrollwheel: false,
-				center: new google.maps.LatLng(23.81033, 90.41252)
+				center: new google.maps.LatLng(43.204666, 27.910543)
 			  };
 
 			  var map = new google.maps.Map(document.getElementById('googleMap'),
 				  mapOptions);
 
 
-			  var marker = new google.maps.Marker({
-				position: map.getCenter(),
-				animation:google.maps.Animation.BOUNCE,
-				icon: 'img/logo/map-marker.png',
-				map: map
-			  });
+			 
 
 			}
 
 			google.maps.event.addDomListener(window, 'load', initialize);
+            
+            if ($.cookie('message_sent')) {
+                $('#msg-box').show();
+            }
 		</script>
 		<!-- owl.carousel js -->
         <script src="js/owl.carousel.min.js"></script>
