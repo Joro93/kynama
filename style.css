@@ -852,6 +852,9 @@ header .row {
   position: relative;
   display: block;
   width: 100%;
+  
+  
+    
 }
 .blog-item .col-md-4 {
     width: 100%;
