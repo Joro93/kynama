@@ -731,7 +731,7 @@ header .row {
   font-size: 14px;
 }
 .single-awesome-portfolio a:hover .awesome-img {
-  transform: translateY(100%);
+  transform: translateY(40%);
 }
 .awesome-portfolio-menu {
   margin-bottom: 40px;
