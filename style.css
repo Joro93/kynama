@@ -693,7 +693,8 @@ header .row {
 .single-awesome-portfolio {
   float: left;
   overflow: hidden;
-  width: 25%;
+    margin: 10px;
+  width: 23%;
 }
 .single-awesome-portfolio a {
   position: relative;
