@@ -691,7 +691,7 @@ header .row {
 /*  7.Portfolio Area
 /*--------------------------------*/
 .single-awesome-portfolio {
-  float: left;
+  float: none;
   overflow: hidden;
     margin: 10px;
   width: 23%;
@@ -759,6 +759,9 @@ header .row {
 }
 .awesome-portfolio-content .mix{
 	display: none;
+}
+.awesome-portfolio-content {
+    text-align:center;
 }
 /*--------------------------------*/ 
 /*  8. Reviews Area
